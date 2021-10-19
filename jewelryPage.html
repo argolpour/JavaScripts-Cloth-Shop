@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/Css/styles.css" />
+    <link rel="stylesheet" href="Assets/Css/MenPagestyles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+    <link rel="icon" href="Assets/Images/siteicon.jpg" type="image/x-icon">
+    <title>Alireza Store</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="top-header">
+            <div class="shopping-bag">
+                <button type="button" class="btn  btn-bag" data-toggle="modal" data-target="#bagModal">
+                    <i class="fas fa-cart-arrow-down"></i><span class="badge badge-light" id="bag-Items">0</span>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="bagModal" tabindex="-1" role="dialog" aria-labelledby="bagModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document" id="bag-modalDialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 id="bagModalLabel">Your Shopping Card</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col" id="shoppingBag-Title">image</th>
+                                        <th scope="col" id="shoppingBag-Title">Title</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody class="bag-records">
+                                </tbody>
+                            </table>
+                            <div class="paying-section">
+
+                                <div class="paying-section-btn">
+                                    <button type="button" class="btn btn-success btn-larg">Pay</button>
+                                    <button type="button" class="btn btn-secondary btn-larg"
+                                        data-dismiss="modal">Close</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="login-box" data-toggle="modal" data-target="#loginModal">
+                <i class="fas fa-user"></i> Sign In/Sign Up
+
+
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="login-modal-title" id="exampleModalLongTitle">Sign In
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="login-modal-body">
+                            <form action="#">
+                                <label for="username">User Name:
+                                    <i class="fas fa-user-alt"></i>
+                                </label><br>
+
+                                <input type="text" id="username" name="username" placeholder="user Name.."><br>
+
+                                <label for="password">Password: <i class="fas fa-lock-open"></i></label><br>
+                                <input type="password" id="password" name="password" placeholder="password..">
+                                <div class="login-modal-footer">
+                                    <div class="login-modal-footer-forgot">
+                                        <span class="forgotPassword"><a href="#" class="forgot-link"> Forgot
+                                                Password?</a></span>
+                                    </div>
+                                    <div class="login-modal-footer-remember">
+                                        <input type="checkbox" id="remember" name="remember" value="remember">
+                                        <label for="remember"> Remember Me</label>
+                                    </div>
+
+                                </div>
+                                <input class="btn" type="submit" value="Sign In" id="signIn">
+                            </form>
+                            <div class="signup-link">
+                                <strong>have not Account ?</strong>
+                                <span><a href="#">Sign Up Now</a></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="search-box">
+                <datalist id="Search-Items">
+
+                </datalist>
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <input type="search" placeholder=" Enter Your Search Words..." class="search-input"
+                    autocomplete="off" />
+            </div>
+            <div class="logo"></div>
+
+        </div>
+        <div class="col-12 row header-content">
+            <div class="col-8 slider">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="Assets/Images/slider1.jpg" alt="First slide" />
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Assets/Images/slider2.jpg" alt="Second slide" />
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Assets/Images/slider3.jpg" alt="Third slide" />
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Assets/Images/slider4.jpg" alt="Third slide" />
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Assets/Images/slider5.jpg" alt="Third slide" />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 baner"></div>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="#">Catagory</a>
+                    <ul class="sub" id="sub">
+                        <a href="MenPage.html" class="catagory-box men"></a>
+                        <a href="WomenPage.html" class="catagory-box women"></a>
+                        <a href="jewelryPage.html" class="catagory-box jewelry"></a>
+                        <a href="ElectronicPage.html" class="catagory-box electronic"></a>
+                    </ul>
+                </li>
+                <li><a href=""> About Us </a></li>
+                <li> <a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <!-- Modal -->
+        <div class="modal fade" id="infomodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="modal-image-block">
+                            <img src="" alt="" class="modal-image">
+                        </div>
+                        <div class="modal-selection-info">
+                            <h6>colors:</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Black
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    White
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="modal-buttons">
+                            <h6 class="modal-price">
+                                </h4>
+                                <button type="button" class="btn btn-primary btn-addToShoppingBag">Add To
+                                    Shopping Bag</button>
+                                <button type="button" class="btn btn-primary " data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" main-wrapper">
+            <div class="main-content">
+                <div class="product-box"></div>
+            </div>
+            <div class="main-filter">
+                <h5 class="price-filter-titel">Price Filter</h5>
+                <div class="wrapper">
+                    <div class="container">
+
+                        <div class="slider-wrapper">
+                            <div id="slider-range"></div>
+
+                            <div class="range-wrapper">
+                                <div class="range"></div>
+                                <div class="range-alert">+</div>
+
+                                <div class="gear-wrapper">
+                                    <div class="gear-large gear-one">
+                                        <div class="gear-tooth"></div>
+                                        <div class="gear-tooth"></div>
+                                        <div class="gear-tooth"></div>
+                                        <div class="gear-tooth"></div>
+                                    </div>
+                                    <div class="gear-large gear-two">
+                                        <div class="gear-tooth"></div>
+                                        <div class="gear-tooth"></div>
+                                        <div class="gear-tooth"></div>
+                                        <div class="gear-tooth"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="marker marker-0"><sup>$</sup>10,000</div>
+
+                            <div class="marker marker-100"><sup>$</sup>110,000+</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="up">
+            <p>
+                <a href="#top"><i class="fas fa-chevron-up"></i></a>
+            </p>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>All Right Reserved 2018-2021</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js "
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js "
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
+        crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl "
+        crossorigin="anonymous "></script>
+    <script src="Assets/Js/jewelryPageScript.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,532 @@
+/* defult styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: serif;
+}
+
+.titr {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #333;
+    margin: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+td {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.btn {
+    font-weight: bold!important;
+}
+
+.btn-larg {
+    width: 200px!important;
+}
+
+
+/* Header Styles */
+
+
+/* Top Header */
+
+.header {
+    margin-bottom: 50px;
+}
+
+.top-header {
+    background-color: rgb(241, 247, 247);
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-header .logo {
+    width: 270px;
+    height: 46px;
+    background-image: url("../Images/logo.png");
+    background-size: auto;
+}
+
+.login-box {
+    text-align: center;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #e71f50;
+    line-height: 40px;
+    padding: 0 15px;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(243, 236, 236);
+    border-radius: 5px;
+}
+
+.login-modal-body {
+    padding: 20px;
+}
+
+#username,
+#password {
+    outline: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border-color: #654fef;
+    padding-left: 10px;
+}
+
+.login-modal-body>form>label {
+    margin-top: 20px;
+    position: relative;
+}
+
+.login-modal-body>form>label>i {
+    position: absolute;
+    top: 170%;
+    left: 430px;
+    color: #654fef;
+    font-size: 18px;
+}
+
+.login-modal-footer {
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.forgotPassword a {
+    all: unset;
+    color: rgb(112, 110, 110);
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.forgotPassword a:hover {
+    text-decoration: none;
+    color: #654fef;
+}
+
+.login-modal-footer-remember>label {
+    color: rgb(112, 110, 110);
+    font-weight: bold;
+}
+
+#signIn {
+    border-radius: 30px;
+    padding: 10px 35px;
+    background-color: #654fef;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.login-modal-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup-link>span>a {
+    color: #654fef;
+    font-weight: 600;
+}
+
+.signup-link>span>a:hover {
+    text-decoration: none;
+    color: #4328f0;
+}
+
+.search-box {
+    text-align: right;
+    width: 40%;
+}
+
+.search-box input {
+    all: unset;
+    width: 85%;
+    height: 40px;
+    outline: 1px solid rgb(216, 210, 210);
+    text-align: left;
+    padding: 0 5px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.search-box input::placeholder {
+    color: rgb(95, 91, 91);
+}
+
+.search-box .search-btn {
+    all: unset;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #e71f50;
+    color: white;
+    cursor: pointer;
+    margin-right: 2px;
+    border-radius: 10px;
+}
+
+.login-section {
+    width: 500px;
+    height: 300px;
+    background: linear-gradient(rgb(187, 173, 173), lightblue);
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    padding: 50px 20px;
+    ;
+    z-index: 200;
+}
+
+.btn-bag {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e71f50;
+    padding: 5px 20px!important;
+}
+
+.btn-bag>i {
+    margin-right: 10px;
+    color: white;
+}
+
+.paying-section {
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paying-section h6 {
+    margin-top: 50px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.paying-section-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.paying-section-btn>button {
+    margin: 0 10px;
+    margin-bottom: 5px;
+}
+
+#shoppingBag-Title {
+    text-align: center;
+}
+
+.shoppingBagImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#bag-modalDialog {
+    max-width: 600px!important;
+}
+
+
+/* header content */
+
+.header-content {
+    margin: 20px 0;
+}
+
+.baner {
+    background: url("../Images/makeup.jpg") no-repeat center top;
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+/* Main menu  */
+
+.nav {
+    height: 25px;
+    background-color: rgba(8, 8, 8, 0.815);
+    position: relative;
+}
+
+.nav>ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.nav>ul>li {
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+.nav>ul>li:hover {
+    background-color: #e71f50;
+}
+
+.nav>ul>li:hover a {
+    color: rgb(247, 247, 247);
+}
+
+.sub {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(117, 114, 114, 0.884);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    padding: 0 50px;
+    z-index: 100;
+}
+
+.sub>a {
+    text-align: center;
+    text-align: left;
+    width: 20%;
+    height: 90%;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.nav>ul>li:hover .sub {
+    opacity: 1;
+    visibility: visible;
+}
+
+.men {
+    background: url("../Images/men.jpg") no-repeat center top;
+    background-size: cover;
+}
+
+.women {
+    background: url("../Images/women.jpg") no-repeat center top;
+    background-size: cover;
+}
+
+.jewelry {
+    background: url("../Images/jewelery.jpg") no-repeat center top;
+    background-size: cover;
+}
+
+.electronic {
+    background: url("../Images/electronics.jpg") no-repeat center top;
+    background-size: cover;
+}
+
+
+/* main */
+
+.main {
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.041);
+}
+
+.product-box {
+    width: 100%;
+}
+
+.product-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.product-block-box {
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.product-block-box img:hover {
+    transform: scale(1.1);
+}
+
+.product-block-box:hover {
+    box-shadow: 5px 0 10px 0 gray;
+    /* transform: translateY(-9px); */
+}
+
+.product-block-box img {
+    width: 100px;
+    height: 100px;
+}
+
+.product-block-box .title {
+    margin: 10px 0;
+    color: rgba(51, 51, 51, 0.568);
+}
+
+.product-block-box .price {
+    color: rgba(255, 0, 0, 0.89);
+    font-weight: bold;
+}
+
+.product-block-box .price::after {
+    content: " $";
+}
+
+.orderBox {
+    width: 20px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+    background-color: rgba(78, 71, 71, 0.726);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.orderBox p {
+    color: white;
+}
+
+.orderBox p:hover {
+    color: rgb(21, 51, 223);
+    cursor: pointer;
+}
+
+.product-block-box:hover .orderBox {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-buttons {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.modal-buttons>button {
+    margin-bottom: 20px;
+}
+
+.modal-buttons>h6 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.total-price {
+    color: green;
+}
+
+.modal-image {
+    width: 150px;
+    height: 200px;
+}
+
+.up {
+    width: 100%;
+    padding: 15px;
+    position: sticky;
+    margin: 20px 15px;
+}
+
+.up a {
+    color: black;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.footer a:hover {
+    color: red;
+}
+
+.up p {
+    text-align: right;
+    border-radius: 15px;
+}
+
+
+/* Footer Styles */
+
+.footer {
+    text-align: center;
+    line-height: 50px;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+}
+
+.footer p {
+    color: #c2ecf1;
+}
+
+
+/* media query */
+
+@media screen and (max-width: 992px) {
+    .top-header {
+        display: flex;
+        flex-flow: column;
+    }
+    .search-box {
+        margin: 20px 0;
+        text-align: right;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+    .sub>a {
+        text-align: center;
+        text-align: left;
+        width: 400px;
+        height: 100px;
+        border-radius: 3px;
+        margin-right: 50px;
+    }
+    .product-block {
+        justify-content: center;
+    }
+}
